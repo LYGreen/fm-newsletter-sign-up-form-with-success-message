@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script defer src="./script.js"></script>
+</head>
+<body>
+
+  <main>
+    <!-- Sign-up form start -->
+    <div id="page-signup" class="page">
+      <picture>
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+
+      <div class="content">
+        <span class="title roboto-700">Stay updated!</span>
+
+        <span class="description roboto-400">Join 60,000+ product managers receiving monthly updates on:</span>
+
+        <ul class="roboto-400">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form id="form" novalidate>
+          <div class="email">
+            <label class="label roboto-700" for="email">Email address</label>
+            <input class="textbox roboto-400" placeholder="email@company.com" id="email" name="email" type="email">
+            <span aria-live="polite" id="email-error" class="roboto-700">Valid email required</span>
+          </div>
+
+          <button id="btn-submit" class="roboto-700">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div id="page-success" class="page">
+      <div class="content">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <span class="title roboto-700">Thanks for subscribing!</span>
+
+        <span class="description roboto-400">A confirmation email has been sent to <span class="email roboto-700">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.</span>
+      </div>
+
+      <button id="btn-dismiss" class="button roboto-700">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LYGreen">LYGreen</a>.
+  </div>
+</body>
+</html>
